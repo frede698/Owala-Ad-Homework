@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.frame {
+    width: 970px;
+    height: 250px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.frame img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+
+}
+
+.frame h1,
+.frame h2,
+.frame p,
+.frame a {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+    
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.button {
+    background-color: #e93680;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 10px 24px;
+    border-radius: 20px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.button:hover {
+    background-color: #24365f;
+    color: white;
+    cursor: pointer;
+}
